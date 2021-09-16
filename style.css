@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* img {
+  max-width: 100%;
+} */
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  background-color: hsl(225, 100%, 94%);
+  overflow-y: hidden;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.container {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 500px;
+}
+
+.card-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.card {
+  background-color: #fff;
+  border-radius: 30px;
+  width: 80%;
+  min-width: 200px;
+  max-width: 400px;
+  box-shadow: 0 15px 10px rgba(32, 49, 96, 0.1);
+}
+
+.card .hero-img {
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: hsl(225, 100%, 98%);
+  /* box-shadow: 3px 3px 4px rgba(32, 49, 96, 0.1),
+    -3px -3px 8px rgba(32, 49, 96, 0.1); */
+  border-radius: 7px;
+  padding: 0.1em 0.7em;
+}
+
+.change-plan {
+  margin-left: auto;
+}
+
+.order-title,
+.order-text {
+  text-align: center;
+}
+
+.order-title {
+  color: hsl(223, 47%, 23%);
+}
+.order-text {
+  margin: auto;
+  width: 80%;
+  padding-bottom: 1em;
+  color: grey;
+}
+.annual {
+  margin-left: 1.4em;
+}
+
+.price {
+  color: grey;
+}
+
+.make-payment {
+  display: inline-block;
+  color: #fff;
+  padding: 0.6em 0;
+  text-decoration: none;
+  margin-top: 1.5em;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  background-color: hsl(245, 75%, 52%);
+}
+
+.make-payment:hover {
+  transition: all 0.5s ease-in-out;
+  opacity: 0.8;
+  box-shadow: 0 25px 10px rgba(32, 49, 96, 0.1);
+}
+.cancel-order {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 2em 0;
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+
+.cancel-order:hover {
+  opacity: 0.8;
+}
+
+.change-plan:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 402px) {
+  .card {
+    width: 95%;
+  }
+
+  .bg {
+    display: none;
+  }
+}
